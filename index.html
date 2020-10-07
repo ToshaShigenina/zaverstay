@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Марафон</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header class="header main-bg">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
+
+        <ul class="menu">
+          <li><a href="#posts">Статьи</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#feedback">Написать мне</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section posts" id="posts">
+        <h2 class="title left">Все статьи</h2>
+
+        <div class="topics">
+          <select>
+            <option value="" selected>Выбрать тему</option>
+            <option value="">все статьи</option>
+            <option value="">путешествия</option>
+            <option value="">город</option>
+            <option value="">книги</option>
+            <option value="">фотографии</option>
+            <option value="">рецепты</option>
+          </select>
+        </div>
+
+        <div class="posts__layout">
+          <a class="card" href="./post.html">
+            <div class="card__thumb">
+              <img src="./img/thumb1.png" alt="">
+            </div>
+            <h3 class="title card__title">Путешествие в Берлин в августе</h3>
+            <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+            <div class="info card__info">
+              <span class="tags">Теги: путешествия</span>
+              <time>29.09.2020</time>
+            </div>
+          </a>
+          <a class="card" href="./post.html">
+            <div class="card__thumb">
+              <img src="./img/thumb2.png" alt="">
+            </div>
+            <h3 class="title card__title">Где выпить колдбрю в Москве</h3>
+            <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+            <div class="card__info">
+              <span class="tags">Теги: город</span>
+              <time>24.07.2020</time>
+            </div>
+          </a>
+          <a class="card" href="./post.html">
+            <div class="card__thumb">
+              <img src="./img/thumb3.png" alt="">
+            </div>
+            <h3 class="title card__title">Прочитано: книжные рекомендации</h3>
+            <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+            <div class="card__info">
+              <span class="tags">Теги: книги</span>
+              <time>15.07.2020</time>
+            </div>
+          </a>
+
+          <a class="card card_full" href="./post.html">
+            <div class="card__thumb">
+              <img src="./img/thumb_full1.png" alt="">
+            </div>
+            <h3 class="title card__title">Снимки на плёнку</h3>
+            <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+            <div class="card__info">
+              <span class="tags">Теги: фотографии</span>
+              <time>29.06.2020</time>
+            </div>
+          </a>
+          <a class="card card_full" href="./post.html">
+            <div class="card__thumb">
+              <img src="./img/thumb_full2.png" alt="">
+            </div>
+            <h3 class="title card__title">Домашний чизкейк </h3>
+            <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+            <div class="card__info">
+              <span class="tags">Теги: рецепты</span>
+              <time>24.06.2020</time>
+            </div>
+          </a>
+        </div>
+
+        <a href="#" class="button button_center">Показать ещё</a>
+
+      </section>
+
+      <section class="section about" id="about">
+        <h2 class="title center">Обо мне</h2>
+
+        <div class="about__layout">
+          <div class="about__item about__photo">
+            <img src="./img/me.png" alt="">
+          </div>
+          <div class="about__item about__content">
+
+            <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+            <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+            <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
+            <p>Приятного чтения!</p>
+
+            <blockquote>
+              Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio">
+        <h2 class="title center">Портфолио</h2>
+
+        <div class="portfolio__layout">
+          <a class="work">
+            <img src="./img/portfolio1.png" alt="" class="work__bg">
+            <h3 class="title work__title">Блог HTML Academy</h3>
+            <h4 class="title work__subtitle">«Как учиться продуктивно»</h4>
+            <p>Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+          </a>
+          <a class="work">
+            <img src="./img/portfolio2.png" alt="" class="work__bg">
+            <h3 class="title work__title">Журнал «LNK»</h3>
+            <h4 class="title work__subtitle">«Зачем поцели нужны человеку? И какие они бывают»</h4>
+            <p>Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+          </a>
+          <a class="work">
+            <img src="./img/portfolio3.png" alt="" class="work__bg">
+            <h3 class="title work__title">Журнал «Т — Л»</h3>
+            <h4 class="title work__subtitle">«Советы по эффективной удалённой работе»</h4>
+            <p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.</p>
+          </a>
+        </div>
+
+        <a href="#" class="button button_center">ПОКАЗАТЬ ЕЩЁ</a>
+      </section>
+
+      <section class="section feedback" id="feedback">
+        <h2 class="title center">Написать мне</h2>
+
+        <form action="" class="form feedback__form">
+          <label for="name">
+            Ваше имя
+            <input id="name" name="name" type="text" placeholder="Иван Иванов" required>
+          </label>
+
+          <label for="email">
+            Email
+            <input type="email" id="email" name="email" placeholder="google@gmail.com" required>
+          </label>
+
+          <label for="message">Сообщение</label>
+          <textarea name="message" id="message" minlength="10" maxlength="200">Напишите здесь ваше сообщение.</textarea>
+
+          <button class="button " type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="social">
+        <li><a href="#">ВК</a></li>
+        <li><a href="#">Телеграм</a></li>
+        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#">Твиттер</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
