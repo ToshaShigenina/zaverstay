@@ -35,18 +35,18 @@
 
         <div class="topics">
           <select>
-            <option value="" selected>Выбрать тему</option>
-            <option value="">все статьи</option>
-            <option value="">путешествия</option>
-            <option value="">город</option>
-            <option value="">книги</option>
-            <option value="">фотографии</option>
-            <option value="">рецепты</option>
+            <option value="select" selected>Выбрать тему</option>
+            <option value="all">все статьи</option>
+            <option value="travel">путешествия</option>
+            <option value="city">город</option>
+            <option value="book">книги</option>
+            <option value="photo">фотографии</option>
+            <option value="recipe">рецепты</option>
           </select>
         </div>
 
         <div class="posts__layout">
-          <a class="card" href="./post.html">
+          <a class="card" href="./post.html" data-tag="travel">
             <div class="card__thumb">
               <img src="./img/thumb1.png" alt="">
             </div>
@@ -57,47 +57,47 @@
               <time>29.09.2020</time>
             </div>
           </a>
-          <a class="card" href="./post.html">
+          <a class="card" href="./post.html" data-tag="city">
             <div class="card__thumb">
               <img src="./img/thumb2.png" alt="">
             </div>
             <h3 class="title card__title">Где выпить колдбрю в Москве</h3>
             <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
-            <div class="card__info">
+            <div class="info card__info">
               <span class="tags">Теги: город</span>
               <time>24.07.2020</time>
             </div>
           </a>
-          <a class="card" href="./post.html">
+          <a class="card" href="./post.html" data-tag="book">
             <div class="card__thumb">
               <img src="./img/thumb3.png" alt="">
             </div>
             <h3 class="title card__title">Прочитано: книжные рекомендации</h3>
             <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
-            <div class="card__info">
+            <div class="info card__info">
               <span class="tags">Теги: книги</span>
               <time>15.07.2020</time>
             </div>
           </a>
 
-          <a class="card card_full" href="./post.html">
+          <a class="card card_full" href="./post.html" data-tag="photo">
             <div class="card__thumb">
               <img src="./img/thumb_full1.png" alt="">
             </div>
             <h3 class="title card__title">Снимки на плёнку</h3>
             <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
-            <div class="card__info">
+            <div class="info card__info">
               <span class="tags">Теги: фотографии</span>
               <time>29.06.2020</time>
             </div>
           </a>
-          <a class="card card_full" href="./post.html">
+          <a class="card card_full" href="./post.html" data-tag="recipe">
             <div class="card__thumb">
               <img src="./img/thumb_full2.png" alt="">
             </div>
             <h3 class="title card__title">Домашний чизкейк </h3>
             <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
-            <div class="card__info">
+            <div class="info card__info">
               <span class="tags">Теги: рецепты</span>
               <time>24.06.2020</time>
             </div>
@@ -189,6 +189,8 @@
       </ul>
     </div>
   </footer>
+
+  <script src="./script/script.js"></script>
 </body>
 
 </html>
