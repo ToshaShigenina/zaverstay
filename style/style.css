@@ -601,6 +601,10 @@ a {
   background-image: url('../img/like.svg');
 }
 
+.like__check {
+  background-image: url('../img/like_check.svg');
+}
+
 .twitter {
   background-image: url('../img/twitter.svg');
 }
