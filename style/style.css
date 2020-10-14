@@ -775,7 +775,7 @@ a {
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .social {
     flex-wrap: wrap;
   }
@@ -799,7 +799,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
 
   .social li:first-child,
   .social li:nth-child(2) {
@@ -877,6 +877,12 @@ a {
   margin-left: 32px;
 }
 
+@media (max-width: 450px) {
+  .share__social li + li {
+    margin-left: 14px;
+  }
+}
+
 .share__icon {
   display: block;
   width: 50px;
@@ -885,6 +891,13 @@ a {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 450px) {
+  .share__icon {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .like__icon {
@@ -933,6 +946,12 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 450px) {
+  .link_back {
+    font-size: 26px;
+  }
+}
+
 .link_back::after {
   content: '';
   display: block;
@@ -942,6 +961,13 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: 450px) {
+  .link_back::after {
+    width: 42px;
+    margin-left: 12px;
+  }
 }
 
 /* comments */
@@ -958,6 +984,18 @@ a {
   padding: 44px 80px 50px 100px;
   background-color: var(--light-color);
   border-radius: var(--round);
+}
+
+@media (max-width: 600px) {
+  .comments__body {
+    padding: 44px 30px 50px 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .comments__body {
+    padding: 44px 20px 50px 30px;
+  }
 }
 
 .comments__item {
@@ -1009,6 +1047,12 @@ a {
   padding-left: 80px;
 }
 
+@media (max-width: 600px) {
+  .comments__form {
+    padding-left: 0;
+  }
+}
+
 .form__title {
   margin-bottom: 70px;
   font-size: 24px;
@@ -1030,14 +1074,36 @@ a {
   justify-content: flex-end;
 }
 
+@media (max-width: 600px) {
+  .form__layout {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 .form__column {
   flex-basis: 40%;
   margin-right: 80px;
 }
 
+@media (max-width: 600px) {
+  .form__column {
+    margin-right: 0;
+  }
+}
+
 .comments__form textarea {
   flex-basis: 60%;
   align-self: stretch;
+}
+
+@media (max-width: 600px) {
+  .comments__form textarea {
+    margin-bottom: 35px
+  }
 }
 
 .comments__form input {
